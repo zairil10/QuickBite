@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>QuickBite</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+      .jumbotron {
+        background-color: #f4511e; /* orange */
+        color: #ffffff;
+      }
+      .section {
+        padding: 60px 50px;
+      }
+      .bg-grey {
+        background-color: #f6f6f6;
+      }
+      .logo {
+        font-size: 200px;
+      }
+      @media screen and (max-width: 768px) {
+        .col-sm-4 {
+          text-align: center;
+          margin: 25px 0;
+        }
+      }
+      /* Add an orange color to all icons and set the font-size */
+      .logo-small {
+        color: #f4511e;
+        font-size: 50px;
+      }
+
+      .logo {
+        color: #f4511e;
+        font-size: 200px;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div class="jumbotron text-center">
+      <h1>QuickBite</h1>
+      <p>Order ahead, pick up fresh!</p>
+
+      <!-- Restaurant browsing -->
+      <div id="browse" class="container">
+        <input id="search" class="form-control" type="text" placeholder="Search restaurants...">
+        <div id="categories"></div>
+        <div id="grid"></div>
+      </div>
+    </div>
+
+    <!-- About -->
+    <div id="about" class="container-fluid section">
+      <div class="row">
+        <div class="col-sm-8">
+          <h2>About Company Page</h2>
+          <h4>Lorem ipsum..</h4>
+          <p>Lorem ipsum..</p>
+          <button class="btn btn-default btn-lg">Get in Touch</button>
+        </div>
+        <div class="col-sm-4">
+          <span class="glyphicon glyphicon-signal logo"></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Values -->
+    <div id="values" class="container-fluid section bg-grey">
+      <div class="row">
+        <div class="col-sm-4">
+          <span class="glyphicon glyphicon-globe logo"></span>
+        </div>
+        <div class="col-sm-8">
+          <h2>Our Values</h2>
+          <h4><strong>MISSION:</strong> Our mission lorem ipsum..</h4>
+          <p><strong>VISION:</strong> Our vision Lorem ipsum..</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Services -->
+    <div id="services" class="container-fluid section text-center">
+      <h2>SERVICES</h2>
+      <h4>What we offer</h4>
+      <br>
+      <div class="row">
+        <div class="col-sm-4">
+          <span class="glyphicon glyphicon-heart logo-small"></span>
+          <h4>LOVE</h4>
+          <p>Lorem ipsum dolor sit amet..</p>
+        </div>
+        <div class="col-sm-4">
+          <span class="glyphicon glyphicon-certificate logo-small"></span>
+          <h4>CERTIFIED</h4>
+          <p>Lorem ipsum dolor sit amet..</p>
+        </div>
+        <div class="col-sm-4">
+          <span class="glyphicon glyphicon-star logo-small"></span>
+          <h4>QUALITY</h4>
+          <p>Lorem ipsum dolor sit amet..</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/category.js"></script>
+  </body>
+</html>
