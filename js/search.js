@@ -17,3 +17,4 @@
                 }
             });
         }
+document.getElementByID('search').addEventListener('keyup', filterList);
